@@ -37,6 +37,9 @@ const router = createBrowserRouter([
       {
         path: "/editTravel/:destination",
         element: <EditTravel />
+      },
+      {
+        basename: "/react-app"
       }
     ],
   },

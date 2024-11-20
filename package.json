@@ -1,6 +1,7 @@
 {
   "name": "newproj",
   "version": "0.1.0",
+  "homepage": "https://andet-art.github.io/react-app",
   "private": true,
   "dependencies": {
     "@material-tailwind/react": "^2.1.10",
@@ -18,7 +19,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -39,7 +42,9 @@
     ]
   },
   "devDependencies": {
+    "-": "^0.0.1",
     "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.2.0",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.14"
   }
